@@ -4,43 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message for you</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .gif {
-            width: 200px;
-            margin: 10px 0;
-        }
-        .btn-group {
-            display: flex;
-            gap: 15px;
-        }
-        .yes-btn, .no-btn {
-            padding: 10px 20px;
-            font-size: 18px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .yes-btn {
-            background-color: #28a745;
-            color: white;
-        }
-        .no-btn {
-            background-color: #dc3545;
-            color: white;
-            position: relative;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -53,21 +17,6 @@
         </div>
     </div>
 
-    <script>
-        const noBtn = document.getElementById("noBtn");
-
-        noBtn.addEventListener("mouseover", () => {
-            const x = Math.random() * (window.innerWidth - 100);
-            const y = Math.random() * (window.innerHeight - 50);
-            noBtn.style.position = "absolute";
-            noBtn.style.left = `${x}px`;
-            noBtn.style.top = `${y}px`;
-        });
-
-        document.querySelector(".yes-btn").addEventListener("click", () => {
-            alert("Yay! 😊");
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
