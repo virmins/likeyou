@@ -9,5 +9,5 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 document.querySelector(".yes-btn").addEventListener("click", () => {
-    alert("Yay! 😊");
+    alert("Yay! HEHEHEHEHEHEHE😊");
 });
