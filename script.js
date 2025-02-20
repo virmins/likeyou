@@ -20,3 +20,16 @@ function toggleSidebar() {
         sidebar.style.display = "none";
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    let sidebar = document.querySelector(".sidebar");
+
+    sidebar.addEventListener("mouseenter", function() {
+        sidebar.style.width = "200px"; // Expand width when hovered
+        sidebar.style.transition = "width 0.3s ease-in-out";
+    });
+
+    sidebar.addEventListener("mouseleave", function() {
+        sidebar.style.width = "50px"; // Collapse width when mouse leaves
+    });
+});
