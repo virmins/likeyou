@@ -11,3 +11,12 @@ noBtn.addEventListener("mouseover", () => {
 document.querySelector(".yes-btn").addEventListener("click", () => {
     alert("Yay! HEHEHEHEHEHEHE😊");
 });
+
+function toggleSidebar() {
+    let sidebar = document.querySelector(".sidebar");
+    if (sidebar.style.display === "none") {
+        sidebar.style.display = "block";
+    } else {
+        sidebar.style.display = "none";
+    }
+}
